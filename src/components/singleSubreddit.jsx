@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, useOutletContext } from "react-router-dom";
 
-export const SingleSubreddit = () => {
+const SingleSubreddit = () => {
   const { subredditName } = useParams();
   const { subreddits, post } = useOutletContext();
 
@@ -31,3 +31,4 @@ const PostItem = ({ post }) => (
     <p>{post.text}</p>
   </li>
 );
+export default SingleSubreddit;

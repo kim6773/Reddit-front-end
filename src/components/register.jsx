@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import API from "../assets/API";
 import { useOutletContext, useNavigate } from "react-router-dom";
 
-export const Register = () => {
+const Register = () => {
   const navigate = useNavigate();
   const [formState, setFormState] = useState({ username: "", password: "" });
   const [error, setError] = useState("");
@@ -71,3 +71,4 @@ export const Register = () => {
     </form>
   );
 };
+export default Register;
